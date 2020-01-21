@@ -52,8 +52,13 @@
 				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
 				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
 				<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-			</ul>
+			</ul>			
 		</div>
+		<ul class="number f-right">
+				<li class="mail">
+					<a href="{{ route('login') }}" class="btn btn-sm btn-block btn-primary">Login</a>
+				</li>
+			</ul>
 	</div>
 	<!--////////////////////////////////////Header-->
 	<header>
