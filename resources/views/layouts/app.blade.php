@@ -92,7 +92,7 @@
                         </li>
                         <li> <a href="docs.html">Help</a> </li>
                         <li class="divider"></li>
-                        <li> <a href="modal.lockme.html" data-toggle="ajaxModal">Logout</a> </li>
+                        <li> <a id="logout-user" href="#" >Logout</a> </li>
                     </ul>
                 </li>
             </ul>
@@ -126,7 +126,7 @@
                                             </li>
                                             <li> <a href="docs.html">Help</a> </li>
                                             <li class="divider"></li>
-                                            <li> <a href="modal.lockme.html" data-toggle="ajaxModal">Logout</a> </li>
+                                            <li> <a id="logout-user" href="#" >Logout</a> </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -380,15 +380,20 @@
     <script src="{{asset('public/backend/js/charts/flot/jquery.flot.min.js')}}"></script>
     <script src="{{asset('public/backend/js/charts/flot/jquery.flot.tooltip.min.js')}}"></script>
     <script src="{{asset('public/backend/js/charts/flot/jquery.flot.spline.js')}}"></script>
-    <script src="{{asset('public/backendjs/charts/flot/jquery.flot.pie.min.js')}}"></script>
-    <script src="{{asset('public/backendjs/charts/flot/jquery.flot.resize.js')}}"></script>
-    <script src="{{asset('public/backendjs/charts/flot/jquery.flot.grow.js')}}"></script>
-    <script src="{{asset('public/backendjs/charts/flot/demo.js')}}"></script>
-    <script src="{{asset('public/backendjs/calendar/bootstrap_calendar.js')}}"></script>
-    <script src="{{asset('public/backendjs/calendar/demo.js')}}"></script>
-    <script src="{{asset('public/backendjs/sortable/jquery.sortable.js')}}"></script>
-    <script src="{{asset('public/backendjs/app.plugin.js')}}"></script>
+    <script src="{{asset('public/backend/js/charts/flot/jquery.flot.pie.min.js')}}"></script>
+    <script src="{{asset('public/backend/js/charts/flot/jquery.flot.resize.js')}}"></script>
+    <script src="{{asset('public/backend/js/charts/flot/jquery.flot.grow.js')}}"></script>
+    <script src="{{asset('public/backend/js/charts/flot/demo.js')}}"></script>
+    <script src="{{asset('public/backend/js/calendar/bootstrap_calendar.js')}}"></script>
+    <script src="{{asset('public/backend/js/calendar/demo.js')}}"></script>
+    <script src="{{asset('public/backend/js/sortable/jquery.sortable.js')}}"></script>
+    <script src="{{asset('public/backend/js/app.plugin.js')}}"></script>
+    <script src="{{asset('public/backend/js/custom.js')}}"></script>
 </body>
 <!-- Mirrored from flatfull.com/themes/scale/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Jul 2019 15:14:15 GMT -->
 
 </html>
+
+<form style="display: none" id="logout-form" action="{{ route('logout') }}" method="POST">
+    @csrf 
+</form>
