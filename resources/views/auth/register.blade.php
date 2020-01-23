@@ -11,7 +11,7 @@
 
 <body class="">
     <section id="content" class="m-t-lg wrapper-md animated fadeInDown">
-        <div class="container aside-xl"> <a class="navbar-brand block" href="index.html">ZItaly</a>
+        <div class="container aside-xl"> <a class="navbar-brand block" href="index.html">Admin Registration</a>
             <section class="m-b-lg">
                 <header class="wrapper text-center"> <strong>Sign up to find interesting thing</strong> </header>
                 <form action="{{route('register')}}" method="POST">
@@ -38,7 +38,7 @@
 
                     
                     <div class="line line-dashed"></div>
-                    <p class="text-muted text-center"><small>Already have an account?</small></p> <a href="signin.html" class="btn btn-lg btn-default btn-block">Sign in</a> </form>
+                    <p class="text-muted text-center"><small>Already have an account?</small></p> <a href="{{route('login')}}" class="btn btn-lg btn-default btn-block">Sign in</a> </form>
             </section>
         </div>
     </section>

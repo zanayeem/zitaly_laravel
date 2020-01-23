@@ -28,10 +28,12 @@
                     <button type="submit" class="btn btn-lg btn-primary btn-block">Sign in</button>
                     <div class="text-center m-t m-b"><a href="#"><small>Forgot password?</small></a></div>
                     <div class="line line-dashed"></div>
-                    <p class="text-muted text-center"><small>Do not have an account?</small></p> <a href="signup.html" class="btn btn-lg btn-default btn-block">Create an account</a> 
+                    <p class="text-muted text-center"><small>Do not have an account?</small></p> <a href="{{route('register')}}" class="btn btn-lg btn-default btn-block">Create an account</a> 
                 </form>
 
             </section>
+            <p type="button" class="btn btn-lg btn-info btn-block" data-toggle="tooltip" data-placement="top" title="ZItaly Restaurant Homepage"> <a href="{{url('/')}}"> Homepage</a>
+            </p>
         </div>
     </section>
     <!-- footer -->
