@@ -52,13 +52,15 @@
 				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
 				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
 				<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-			</ul>			
-		</div>
-		<ul class="number f-right">
-				<li class="mail">
-					<a href="{{ route('login') }}" class="btn btn-sm btn-block btn-primary">Login</a>
-				</li>
+			
 			</ul>
+			<ul class="top-social f-left">
+				<li><a href="{{ route('login') }}"><i class="fa fa-sign-in"></i></a></li>
+			</ul>
+			<ul class="top-social f-left">
+				<li><a href="{{ route('register') }}"><i class="fa fa-plus-square"></i></a></li>
+			</ul>			
+		</div>		
 	</div>
 	<!--////////////////////////////////////Header-->
 	<header>
