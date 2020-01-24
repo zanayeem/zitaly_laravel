@@ -52,7 +52,6 @@
 				<li><a href="#"><i class="fa fa-google-plus" title="Google"></i></a></li>
 				<li><a href="#"><i class="fa fa-linkedin" title="LinkedIn"></i></a></li>
 				<li><a href="#"><i class="fa fa-instagram" title="Instagram"></i></a></li>
-				<li><a href="#"><i class="fa fa-instagram" title="Instagram"></i></a></li>
 			
 			</ul>
 			<ul class="top-social f-left">
